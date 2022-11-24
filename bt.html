@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let height=prompt("nhập chiều cao hcn")
+let width = prompt("Nhập chiều rộng hcn")
+    class Rectangle{
+        height;
+        width;
+        area(){
+            return this.height*this.width;
+        }
+        perimeter(){
+            return this.height*2+this.width*2;
+        }
+
+        constructor(height, width) {
+            this.height = height;
+            this.width = width;
+        }
+    }
+    let hcn= new Rectangle(height,width);
+    let area2=hcn.area();
+    let perimeter2=hcn.perimeter()
+    document.write("Diện tích hình chữ nhật:"+area2+"Chu vi hình chữ nhật:"+perimeter2)
+</script>
+</body>
+</html>
